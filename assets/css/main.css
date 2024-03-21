@@ -669,3 +669,32 @@ table td {
       visibility: hidden;
   }
 }
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* scrollbar */
+/* // 滚动条设置 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5;
+}
+
+/* // 滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+/* // 内层滚动漕 */
+::-webkit-scrollbar-track-piece {
+  background-color: #f5f5f5;
+}
+
+/* // 边角 */
+::-webkit-scrollbar-corner {
+  background-color: #f5f5f5;
+}

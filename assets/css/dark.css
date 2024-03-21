@@ -99,3 +99,32 @@ video {
   -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
 } 
 */
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* scrollbar */
+/* // 滚动条设置 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #292d33;
+}
+
+/* // 滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #5c6066;
+}
+
+/* // 内层滚动漕 */
+::-webkit-scrollbar-track-piece {
+  background-color: #292d33;
+}
+
+/* // 边角 */
+::-webkit-scrollbar-corner {
+  background-color: #292d33;
+}
