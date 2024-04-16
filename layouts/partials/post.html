@@ -85,10 +85,11 @@
 		
     	const THEME_PREF_STORAGE_KEY = 'theme-preference';
       const currentTheme = localStorage.getItem(THEME_PREF_STORAGE_KEY) || 'default';
+    	const themeDict = JSON.parse("{{ .Site.Params.giscus.theme | jsonify }}");
 
+			console.log(themeDict);
       const script = document.createElement('script');
       script.src = 'https://giscus.app/client.js';
-    	const themeDict = JSON.parse('{{ .Site.Params.giscus.theme | jsonify }}');
 
       const giscusConfig = {
         'data-repo': '{{ site.Params.giscus.repo }}',
